@@ -1,5 +1,5 @@
 ---
-name: Feedback
+name: Documentation feedback
 about: Documentation feedback
 title: ''
 labels: documentation
