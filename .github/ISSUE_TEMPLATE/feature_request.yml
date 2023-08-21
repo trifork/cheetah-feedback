@@ -1,0 +1,16 @@
+name: Feature
+description: Feature request
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please explain the requested feature
+  - type: textarea
+    id: feature_described
+    attributes:
+      label: Tell us about the feature
+      placeholder: Describe the feature in as much details as possible. And why is it requested
+    validations:
+      required: true
