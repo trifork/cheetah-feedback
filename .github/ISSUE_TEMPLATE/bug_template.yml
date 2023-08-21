@@ -1,27 +1,24 @@
 name: Documentation
 description: Documentation feedback
-title: "[Feedback]: "
-labels: ["documentation"]
+title: "[Bug]: "
+labels: ["bug"]
 body:
   - type: markdown
     attributes:
       value: |
         Please explain the issue with documentation
   - type: textarea
-    id: what-happened
+    id: issue_described
     attributes:
       label: Tell us about the problem
       description: Also tell us, what did you expect to happen?
       placeholder: Describe the problem in as much details as possible.
     validations:
       required: true
-  - type: dropdown
-    id: documentation_type
+  - type: textarea
+    id: debug_log
     attributes:
-      label: Type of issue
-      description: What kind of issue is it?
-      options:
-        - Missing information
-        - Wrong information
+      label: Stacktrace
+      description: If you have a stacktrace paste it here
     validations:
-      required: true
+      required: false
