@@ -1,29 +1,27 @@
-name: Feedback
-description: File a bug report
-title: "[Issue]: "
+name: Documentation
+description: Documentation feedback
+title: "[Feedback]: "
 labels: ["documentation"]
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this bug report!
+        Please explain the issue with documentation
   - type: textarea
     id: what-happened
     attributes:
-      label: What happened?
+      label: Tell us about the problem
       description: Also tell us, what did you expect to happen?
       placeholder: Describe the problem in as much details as possible.
     validations:
       required: true
   - type: dropdown
-    id: version
+    id: documentation_type
     attributes:
-      label: Version
+      label: Type of issue
       description: What kind of issue is it?
       options:
-        - Bug (code)
-        - Proposed improvement
-        - feature request
-        - wrong information (documentation)
+        - Missing information
+        - wrong information
     validations:
       required: true
